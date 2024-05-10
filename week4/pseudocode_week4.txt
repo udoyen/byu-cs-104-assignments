@@ -1,0 +1,48 @@
+# Pseudocode Assignment
+#
+######################## Section 1 ##########################
+### Calculating Factors of A Number ###
+
+# BEGIN
+# SET: condition = TRUE
+# SET: factors = [1]
+# WHILE condition == TRUE
+    # number = INPUT: "Enter a number"
+    # FOR i in RANGE(2, number):
+        # IF number MOD i == 0
+            # ADD i to factors
+        # END IF
+    # END FOR
+    # ADD number to factors
+    # FOR j in factors:
+        # PRINT: "Factors of number include: " + j
+    # END FOR
+    # answer = INPUT: "would you like to enter another number (y/n)? "
+    # IF answer.upper() == "N" THEN
+        # SET: condition = FALSE
+    # END IF
+# END WHILE
+# PRINT: "Thank you for playing!" 
+# STOP 
+
+
+################## Section 2 ###################
+### Determining if A Number is A Perfect Square ###
+
+# BEGIN
+# IMPORT: MATH module
+# SET: condition = TRUE
+# WHILE condition == TRUE
+    # number = int(INPUT: "Enter a number")
+    # IF int(MATH.SQRT(number)) == MATH.SQRT(number) THEN
+        # PRINT: str(number) + " has a perfect square root"
+    # ELSE
+        # PRINT: str(number) + " does not have a perfect square root"
+    # END IF
+    # answer = INPUT: "would you like to enter another number (y/n)? "
+    # IF answer.upper() == "N" THEN
+        # SET: condition = FALSE
+    # END IF
+# END WHILE
+# PRINT: "Thank you for playing!"
+# STOP

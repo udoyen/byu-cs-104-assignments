@@ -24,8 +24,8 @@ with open('credentials.txt', 'r') as file: # Helps to open, read, and close the 
     credentials['pass'] = split_string_by_comma[1] # Set the pass key in the dictionary
     credentials['level'] = split_string_by_comma[2][:2] # Set the level key in the dictionary and remove the '/n' character
 
-username = input("Please enter your username!") # Get username from user
-password = input("Please enter your password!") # Get password from user
+username = input("Please enter your username! ") # Get username from user
+password = input("Please enter your password! ") # Get password from user
 
 print() # prints a blank line
 
@@ -76,13 +76,13 @@ if authorized:
 
 
 
-        bags_needed = math.ceil(total_area / area_covered_by_one_bag) # Calculate the number of bags needed
+        bags_needed = math.ceil(total_area / area_covered_by_one_bag) # Calculate the number of bags needed and round the value
 
         unrounded_bags = total_area / area_covered_by_one_bag # Calculate the number of bags needed without rounding
 
         cost_of_fertilizer = bags_needed * cost_of_fertilizer_per_bag # Calculates total cost of fertilizer
 
-        hours_of_labor_needed = math.ceil(total_area / area_covered_per_hour_by_tech) # Calculate time cost of work
+        hours_of_labor_needed = math.ceil(total_area / area_covered_per_hour_by_tech) # Calculate time cost of work and round the value
 
         cost_of_labor = hours_of_labor_needed * charge_per_hour_of_work # Calculate total labor cost
 
