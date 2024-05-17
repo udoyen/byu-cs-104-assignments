@@ -1,0 +1,39 @@
+START
+SET condition to TRUE
+SET factors to [1]
+WHILE condition is TRUE
+    Ask the user to enter a number
+    FOR each number from 2 up to the entered number
+        IF the entered number is divisible by the current number
+            Add the current number to the factors list
+        END IF
+    END FOR
+    Add the entered number to the factors list
+    FOR each factor in the factors list
+        PRINT "Factors of the entered number include: " + factor
+    END FOR
+    Ask the user if they want to enter another number (y/n)
+    IF the user's answer is 'N' THEN
+        SET condition to FALSE
+    END IF
+END WHILE
+PRINT "Thank you for playing!"
+STOP
+
+BEGIN
+IMPORT the MATH module
+SET condition to TRUE
+WHILE condition is TRUE
+    Ask user to entger a Number AND Convert the Number to an integer
+    IF the SQUARE ROOT of the Number has no remainder THEN
+        PRINT Number has a perfect SQUARE ROOT
+    ELSE
+        PRINT Number does not have a perfect SQUARE ROOT
+    END IF
+    Ask the user if they would like to enter another Number (y/n)
+    IF the user's answer is "N" THEN
+        SET condition to FALSE
+    END IF
+END WHILE
+PRINT "Thank you for playing!"
+STOP
