@@ -17,6 +17,7 @@ def check_requested_book():
     b_check = book_check_response.json()
     list_of_books = [_id['_id'] for _id in b_check['books']]
     if book_request.replace(" ", "").lower() not in list_of_books:
+        print("That book is not in the list of books")
         sys.exit(1)
 
 
