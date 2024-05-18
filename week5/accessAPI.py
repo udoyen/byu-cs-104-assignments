@@ -11,6 +11,8 @@ user_response = True  # set the initial response to True
 
 
 def check_requested_book():
+    """function to check if the requested book is available
+    """
     book_check_response = requests.get(base_url)
     b_check = book_check_response.json()
     list_of_books = [_id['_id'] for _id in b_check['books']]
@@ -19,6 +21,9 @@ def check_requested_book():
 
 
 def check_requested_chapter():
+    """
+    function to check requested chapter exists
+    """
     chapter_check = requests.get(base_url + book_request.replace(" ", ""))
     c_check = chapter_check.json()
     list_of_chapters = [_id['_id'][len(book_request.replace(" ", "").lower()):] for _id in c_check['chapters']]
