@@ -17,7 +17,7 @@ def get_color():
         if 1 <= color <= 11:
             return color
         else:
-            color = int(input("Please enter a valid number between 1 and 11: "))
+            color = int(input(f"  What color would you like your polygon to be? \n  {'1-Red': <9}  6-Blue\n  {'2-Orange': <10} 7-Purple\n  {'3-Black': <10} 8-Violet\n  {'4-Green': <10} 9-Gold\n  {'5-Indigo': <10} 10-Cyan\n  11-Rainbow(random)\nChoice?  "))
     
 def get_number_of_sides():
     """function to get number of sides for the ploygon
@@ -30,7 +30,7 @@ def get_number_of_sides():
         if 1 <= number_of_sides <= 99:
             return number_of_sides
         else:
-            number_of_sides = int(input("Please enter a valid number between 1 and 99!  "))
+            number_of_sides = int(input("How many sides for your polygon?  "))
 
 while user_response:
 
